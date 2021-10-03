@@ -21,7 +21,7 @@
                 </div>
                 <div class="top__content">
                     <p class="top__text">
-                        <i class="uil uil-clock-three"></i>Ouverture: Lundi au Samedi 10h - 22h
+                        <i class="uil uil-clock-three top__icon"></i>Ouverture: Lundi au Samedi 10h - 22h
                     </p>
                 </div>
             </div>
@@ -34,8 +34,15 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="uil uil-list-ul nav__icon"></i>
+
+                <!-- <i class="uil uil-list-ul nav__icon"></i> -->
+
+                <div class="nav__button" [class.change]="button_toggle" (click)="clickEvent()" id="navbutton">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
             </button>
             <div class="collapse navbar-collapse nav__link__container" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,6 +64,3 @@
     <div>
     </div>
 </section>
-<div>
-    <p><span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae labore a corrupti aspernatur enim autem rerum numquam doloribus quibusdam eum excepturi quam at possimus, eaque aliquid, velit beatae quas! Vero!</span><span>Nihil laboriosam fuga ut, hic, ab voluptatum rerum molestias beatae tempora illum sunt tenetur sapiente saepe provident exercitationem delectus vel deleniti magnam? Quam rerum impedit, autem qui similique deserunt cupiditate.</span><span>Ipsum architecto expedita nesciunt quod similique amet dolores earum, delectus, dolorum sint assumenda cupiditate nam impedit quidem rerum voluptatibus fugiat! Voluptas explicabo recusandae ducimus cumque aliquam, quidem non minus fuga!</span><span>Recusandae blanditiis magnam nostrum, tenetur laborum praesentium ut at rerum autem dignissimos consectetur molestiae assumenda aut voluptatum minima! Voluptatum illo tempora aut voluptas odit eos harum similique, doloribus ea quisquam.</span><span>Error, pariatur odit ex nobis veritatis, autem numquam iste assumenda reiciendis dolore commodi dicta eius beatae ullam quisquam alias laboriosam cum deserunt? Odit nulla deleniti impedit perferendis incidunt pariatur ea.</span><span>Minus minima sequi possimus nostrum necessitatibus error incidunt, sint blanditiis, aspernatur velit adipisci nulla soluta in praesentium vero ratione quasi esse officiis officia at unde. Et officia asperiores sed illum!</span><span>Enim doloremque asperiores autem animi maxime harum cupiditate deleniti dolorem iusto, nemo soluta itaque inventore consequatur, repellat, maiores ea adipisci obcaecati molestiae! Eum, labore qui eligendi totam esse quibusdam temporibus!</span><span>Molestias debitis atque quam nobis nesciunt fuga voluptate labore, perspiciatis ullam laborum, quas maiores aspernatur sint consequatur amet cupiditate? Minus dignissimos doloremque quae, repudiandae quos totam placeat aperiam autem velit!</span><span>Cum est delectus veniam assumenda blanditiis hic esse numquam laborum amet. Libero molestiae eaque facere, obcaecati asperiores nesciunt! Accusantium architecto similique voluptates amet quasi, recusandae perferendis sequi voluptatibus corrupti minima?</span><span>Ratione, assumenda dignissimos! Qui dolore vitae earum ex veniam praesentium doloribus, illo error accusamus ut temporibus non. Dicta suscipit corporis placeat labore obcaecati perspiciatis impedit voluptatibus, earum non porro magni?</span></p>
-</div>

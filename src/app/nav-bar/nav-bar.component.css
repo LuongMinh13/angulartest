@@ -8,6 +8,10 @@
 }
 
 .top__text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5px;
     color: var(--whitecolor);
 }
@@ -17,6 +21,7 @@
 }
 
 .top__icon{
+    margin-right: 5px;
     font-size: 20px;
     color: var(--whitecolor);
 }
@@ -31,6 +36,7 @@ nav{
     padding: 0;
     width: 100%;
     z-index: 100;
+    transition: 0.5s;
 }
 
 .navbar-toggler:focus {
@@ -38,6 +44,13 @@ nav{
     outline: 0;
     box-shadow: none;
 }
+
+.navbar-toggler {
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px 5px 0px 5px;
+}
+
 
 .container-fluid{
     display: flex;
@@ -47,16 +60,11 @@ nav{
     margin-right: 5px;
 }
 
-.navbar-toggler{
-    border: 1px solid var(--whitecolor);
-    font-size: 1.5rem;
-}
-
-.nav__icon{
+/* .nav__icon{
     color: var(--whitecolor);
     margin: 10px 10px 0px 10px;
     font-size: 40px;
-}
+} */
 
 .nav-item{
     display: flex;
@@ -76,6 +84,9 @@ nav{
     background: white;
 }
 
+
+
+/* ================ BACKGROUND HEADER ================== */
 .hero{
     position: relative;
     width: 100%;
@@ -89,12 +100,63 @@ nav{
 }
 
 
-
 /* ================ STICKY ================== */
 .sticky{
     position: fixed;
     top: 0;
     overflow: hidden;
     z-index: 998;
-    transition: 0.5s;
+    transition: 2s;
+}
+
+nav.sticky{
+    background-color: white;
+}
+
+.sticky .container-fluid{
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+
+.sticky .navbar-toggler{
+    border: none;
+}
+
+.sticky .bar1{
+    background-color: black;
+}
+
+.sticky .bar2 {
+    background-color: black;
+}
+
+.sticky .bar3 {
+    background-color: black;
+}
+
+/* ================ NAVBUTTON ================== */
+.nav__button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {opacity: 0;}
+  
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
 }

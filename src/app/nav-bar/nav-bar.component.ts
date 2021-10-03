@@ -13,10 +13,22 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  button_toggle:Boolean = false;
+
+  clickEvent(){
+    if(this.button_toggle == false)
+    {
+      this.button_toggle = true;
+    }
+    else{
+      this.button_toggle = false;
+    }
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
 
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+    if (window.scrollY > 100) 
     {
       document.getElementById('navigateur')?.classList.add('sticky');
     }
@@ -25,4 +37,5 @@ export class NavBarComponent implements OnInit {
       document.getElementById('navigateur')?.classList.remove('sticky');
     }
 }
+
 }
