@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* =========== GOOGLEFONTS ============= */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+/* =========== ROOT ============= */
+:root{
+    --fontFamily : "Josefin Sans", sans-serif;
+    --maincolor : green;
+    --whitecolor : #fff;
+    --blackcolor : #000;
+}
+
+
+
+
+/* =========== BASE ============= */
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 1,5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 999;
+    background: 0 0;
+    font-family: var(--fontFamily);
+}
