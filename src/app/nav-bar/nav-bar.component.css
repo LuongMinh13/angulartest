@@ -86,6 +86,7 @@ nav{
 
 
 
+
 /* ================ BACKGROUND HEADER ================== */
 .hero{
     position: relative;
@@ -100,22 +101,29 @@ nav{
 }
 
 
+
+
 /* ================ STICKY ================== */
 .sticky{
     position: fixed;
-    top: 0;
     overflow: hidden;
     z-index: 998;
+    box-shadow: 0 7px 13px 0 rgb(0 0 0 / 20%);
     transition: 2s;
+    top: 0px;
 }
 
+
 nav.sticky{
+    max-width: auto;
     background-color: white;
+    
 }
 
 .sticky .container-fluid{
     margin-top: 0;
     margin-right: 5px;
+    
 }
 
 
@@ -135,7 +143,10 @@ nav.sticky{
     background-color: black;
 }
 
-/* ================ NAVBUTTON ================== */
+
+
+
+/* ================ NAVBUTTON MOBILE================== */
 .nav__button {
     display: inline-block;
     cursor: pointer;
@@ -159,4 +170,158 @@ nav.sticky{
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+
+/* ================ NAVBUTTON MOBILE================== */
+.section__hero{
+    display: flex;
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #fff,
+    0 0 82px #fff,
+    0 0 92px #fff,
+    0 0 102px #fff,
+    0 0 151px #fff;
+}
+
+.hero__title {
+    font-family: var(--fontfamily2);
+    font-size: 65px;
+    color: green;
+}
+
+
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 1024px)
+{
+    /* ================ TOP BAR ================== */
+    .top__barcontainer{
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .top__list-reverse{
+        flex-direction: row-reverse;
+    }
+
+    .top__icon{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* ================ NAVBAR ================== */
+    .nav__link__container{
+        max-width: 900px;
+        margin: auto;
+        margin-top: 10px;
+        background: transparent;
+    }
+    
+    .nav-item a {
+        padding: 0 10px 0 10px;
+        font-size: 20px;
+        border-bottom: none;
+        color: white;
+    }
+    
+    .nav__link__container{
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .navbar-nav a{
+        display: block;
+        color: black;
+           text-transform: uppercase;
+        transition: color   650ms;
+    }
+    
+    .navbar-nav a:hover{
+        color: green;
+    }
+
+    /* ================ HERO ================== */
+        
+    .section__hero{
+        display: flex;
+    }
+    
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+    }
+    
+    .hero__title {
+        font-family: var(--fontfamily2);
+        font-size: 150px;
+        color: green;
+    }
+        
+    
+    
+}
+
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+    
+    /* ================ HERO ================== */
+    .section__hero{
+        display: flex;
+    }
+
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #fff,
+        0 0 82px #fff,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+    }
+
+    .hero__title {
+        font-family: var(--fontfamily2);
+        font-size: 150px;
+        color: green;
+    }
+
+
+
+
 }

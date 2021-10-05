@@ -2,21 +2,21 @@
 
 
 /* =========== GOOGLEFONTS ============= */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+
 /* =========== ROOT ============= */
 :root{
-    --fontFamily : "Josefin Sans", sans-serif;
+    --fontfamily1 : "Josefin Sans", sans-serif;
+    --fontfamily2 : 'Cookie', cursive;
     --maincolor : green;
     --whitecolor : #fff;
     --blackcolor : #000;
 }
 
 
-
-
 /* =========== BASE ============= */
-
-
 *,
 *::before,
 *::after{
@@ -43,5 +43,14 @@ header{
     height: auto;
     z-index: 999;
     background: 0 0;
-    font-family: var(--fontFamily);
+    font-family: var(--fontfamily1);
+}
+
+.grid{
+    display: grid;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
