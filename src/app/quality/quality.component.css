@@ -1,0 +1,118 @@
+.quality{
+    background-image: url(../../assets/Image/background/bgquality.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+}
+
+.quality__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.grid{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    align-content: center; */
+}
+
+.quality__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.quality__content:first-child{
+    margin-top: 30px;
+}
+
+.quality__content h3 {
+    font-family: var(--fontfamily1);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.quality__content p {
+    font-family: var(--fontfamily1);
+    color: green;
+    font-size: 15px;
+}
+
+.quality__img-container{
+    margin-bottom: 10px;
+}
+
+.quality__img{
+    width: 50%;
+}
+
+.quality__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+    .quality{
+        height: auto;
+    }
+
+    .grid{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .quality__content:first-child{
+        margin-top: 0;
+    }
+    
+    .quality__container{
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .quality{
+        height: auto;
+    }
+
+    .grid{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .quality__content:first-child{
+        margin-top: 0;
+    }
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+    .quality__container{
+        padding: 50px;
+    }
+}
+

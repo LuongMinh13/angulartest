@@ -1,0 +1,46 @@
+.gallery__title__container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery__subtitle,
+.gallery__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery__subtitle{
+    font-family: var(--fontfamily2);
+    font-size: 28px;
+    color: var(--maincolor);
+}
+
+.gallery__title{
+    font-family: var(--fontfamily1);
+    font-size: 40px;
+    color: #333;
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+   .gallery__images{
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .gallery__images{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+ 
+}

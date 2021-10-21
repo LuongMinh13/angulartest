@@ -17,6 +17,7 @@
     height: 180vh;
 }
 
+
 .line{
     position: absolute;
     width: 100%;
@@ -124,7 +125,19 @@
     color: #999;
 }
 
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+    .about__container{
+        height: 120vh;
+    }
 
+    .about__gird2{
+        display: none;
+    }
+
+
+}
 
 /* ================ Tablette ================== */
 @media screen and (min-width: 1024px)
@@ -134,7 +147,7 @@
     }
 
     .about__container{
-        height: 85vh;
+        height: 60vh;
     }
 
     .about__gird2{
@@ -155,7 +168,10 @@
 /* ================ PC ================== */
 @media screen and (min-width: 1200px)
 {
-    
+    .about__container{
+        height: 60vh;
+    }
+
     .about__gird2{
         display: flex;
     }
@@ -168,5 +184,11 @@
     .about__content{
         display: grid;
         grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .about__container{
+        height: 100vh;
     }
 }

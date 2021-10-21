@@ -1,3 +1,172 @@
 .offre{
-    position: block;
+    margin-top: 1800px;
+    position: relative;
+    background: url(../../assets/Image/background/backgroundoffre.jpg) center no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.offre:after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+}
+
+.offre__container{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators button{
+color: black;
+}
+
+.offre__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.offre__title span{
+    display: block;
+    color: green;
+    font-family: Cookie,cursive;
+    font-size: 28px;
+}
+
+.offre__title h2{
+    display: block;
+    color: #FFF;
+    font-family: Josefin Sans,sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    border: none;
+    border-radius: 5px
+}
+
+.offre__img{
+    height: 60%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-subtitletitle{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: green;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.card-title{
+    margin-top: 0;
+    font-size: 18px;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.card-text{
+    margin-top: 0;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 15px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.carousel-indicators{
+    z-index: 101;
+    margin: 0;
+}
+
+.carousel-indicators button{
+    background-color: green;
+}
+
+.btn-primary{
+    background-color: green;
+    border: green;
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+    .offre{
+        margin-top: 1050px;
+    }
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 1024px)
+{
+    .card{
+        width: 500px;
+        height: 600px;
+    }
+
+    .offre{
+        margin-top: 800px;
+    }
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+    .card{
+        width: 500px;
+        height: 600px;
+    }
+
+    .offre{
+        height: 80vh;
+    }
+}
+
+/* ================ PC ================== */
+@media screen and (min-width: 1920px){
+    .about__container{
+        height: 100vh;
+    }
+
+    .offre{
+        margin-top: 1050px;
+    }
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+
 }

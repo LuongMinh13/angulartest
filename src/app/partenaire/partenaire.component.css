@@ -1,0 +1,64 @@
+.partenaire{
+    position: relative;
+    background-image: url(../../assets/Image/background/parteanirebg.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    padding-bottom: 30px;
+}
+
+.partenaire__content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.partenaire__title__container{
+    margin-top: 20px;
+}
+
+.partenaire__subtitle,
+.partenaire__title{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.partenaire__subtitle{
+    font-family: var(--fontfamily2);
+    font-size: 28px;
+    color: green;
+}
+
+.partenaire__title{
+    font-family: var(--fontfamily1);
+    font-size: 40px;
+    color: #333;
+}
+
+.partenaire__items{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.partenaire__logo{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: auto;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 1024px)
+{
+
+}

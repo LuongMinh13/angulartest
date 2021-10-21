@@ -8,6 +8,13 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { TestComponent } from './test/test.component';
 import { AboutComponent } from './about/about.component';
 import { OffrespecialComponent } from './offrespecial/offrespecial.component';
+import { QualityComponent } from './quality/quality.component';
+import { MenuComponent } from './menu/menu.component';
+import { GalerryComponent } from './galerry/galerry.component';
+import { ReviewComponent } from './review/review.component';
+import { ContactComponent } from './contact/contact.component';
+import { PartenaireComponent } from './partenaire/partenaire.component';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +22,20 @@ import { OffrespecialComponent } from './offrespecial/offrespecial.component';
     NavBarComponent,
     TestComponent,
     AboutComponent,
-    OffrespecialComponent
+    OffrespecialComponent,
+    QualityComponent,
+    MenuComponent,
+    GalerryComponent,
+    ReviewComponent,
+    ContactComponent,
+    PartenaireComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

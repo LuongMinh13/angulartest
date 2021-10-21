@@ -1,0 +1,160 @@
+.review{
+    position: relative;
+    background: url(../../assets/Image/background/feedbackbg.jpg) center no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.review:after {
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 1;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+   -moz-transition: all 0.5s;
+}
+
+.review__container{
+    display: flex;
+    position: absolute;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators button{
+color: black;
+}
+
+.review__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.review__title h2{
+    display: block;
+    color: #FFF;
+    font-family: Josefin Sans,sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.review__title span {
+    display: block;
+    color: green;
+    font-size: 28px;
+    font-family: var(--fontfamily2);
+}
+
+.card{
+    width: 400px;
+    height: 500px;
+    background-color: transparent;
+}
+
+.card-subtitletitle{
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: green;
+    font-family: "Josefin Sans",sans-serif;
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 0;
+    font-size: 18px;
+    font-family: "Josefin Sans",sans-serif;
+    color: #FFF;
+}
+
+.card-text{
+    text-align: center;
+    margin-top: 0;
+    font-family: "Josefin Sans",sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    line-height: 1.6;
+}
+
+.carousel-indicators{
+    z-index: 101;
+    margin: 0;
+}
+
+.carousel-indicators button{
+    background-color: #FFF;
+}
+
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+
+}
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 1024px)
+{
+    .review-item{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .review__title span{
+        font-size: 50px;
+    }
+
+    .review__title h2{
+        font-size: 50px;
+    }
+
+    .card-text{
+        font-size: 25px;
+    }
+
+    .card-title{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .card{
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 800px;
+        height: 600px;
+    }
+
+
+
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1920px){
+
+
+}

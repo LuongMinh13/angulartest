@@ -1,0 +1,282 @@
+.menu{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.menu::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+135deg,#212529,#212529 5px,transparent 0,transparent 10px);
+    z-index: -3;
+    opacity: .05;
+}
+
+
+.menu__subtitle{
+    font-family: var(--fontfamily2);
+    font-size: 28px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.menu__title{
+    font-family: var(--fontfamily1);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.menu__tabs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+
+.menu__button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #edf5ff;
+    border-radius: 50%;
+}
+
+
+.menu__button:active{
+    background-color: green;
+}
+
+
+.menu__button-item{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.menu__icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 32px;
+    color: #333;
+}
+
+
+
+.menu__tab-content{
+    position: relative;
+}
+
+/* -------------------SOUP------------------------ */
+.soup{
+    display: none;
+    position: relative;
+    background-image: url("../../assets/Image/menu/phoboeuf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.soup:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: .8;
+    z-index: -1;
+}
+
+/* -------------------ENTREE------------------------ */
+.entree{
+    display: none;
+    position: relative;
+    background-image: url("../../assets/Image/menu/menubackground/beigenetcrevetterizvert.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.entree:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: .8;
+    z-index: -1;
+}
+
+
+/* -------------------NOUILLE------------------------ */
+.nouille{
+    display: none;
+    position: relative;
+    background-image: url("../../assets/Image/menu/nouillecroustillantboeuf.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+.nouille:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: .8;
+    z-index: -1;
+}
+
+
+/* -------------------RICE------------------------ */
+.rice{
+    display: none;
+    position: relative;
+    background-image: url("../../assets/Image/menu/boeufloclac.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+.rice:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: .8;
+    z-index: -1;
+}
+
+/* -------------------Dessert------------------------ */
+.dessert{
+    display: none;
+    position: relative;
+    background-image: url("../../assets/Image/menu/menubackground/dessertbackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+
+.dessert:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: green;
+    opacity: .8;
+    z-index: -1;
+}
+
+.active__menu{
+    background-color: green;
+    transition: 2s
+}
+
+.active__menu a i{
+    color: white;
+    transition: 2s;
+}
+
+.active{
+    display: block;
+    transition: 5s;
+}
+
+
+.menu__single{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 0.5rem;
+    padding: 5%;
+}
+
+.menu__img img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.menu__detail h3{
+    color: #FFF;
+    font-family: var(--fontfamily1);
+}
+
+.menu__detail h4{
+    font-size: 18px;
+    color: #FFF;
+    font-family: var(--fontfamily1);
+}
+
+.menu__detail span{
+    color: #FFF;
+    font-size: 15px;
+    text-align: center;
+    font-family: var(--fontfamily1);
+}
+
+
+/* ================ Tablette ================== */
+@media screen and (min-width: 768px)
+{
+    .menu__container{
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .menu__table-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+ 
+}
+
+
+/* ================ PC ================== */
+@media screen and (min-width: 1200px)
+{
+    .menu__table-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-content: center;
+    }
+}

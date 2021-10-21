@@ -35,6 +35,10 @@ a{
     text-decoration: none;
 }
 
+a:hover {
+    cursor:pointer;
+}
+
 header{
     position: absolute;
     top: 0;
@@ -53,4 +57,15 @@ header{
 body{
     margin: 0;
     padding: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

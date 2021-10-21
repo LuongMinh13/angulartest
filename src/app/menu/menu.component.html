@@ -1,0 +1,344 @@
+<section class="menu">
+    <div class="menu__container">
+        <div class="menu__content">
+            <div class="menu__title-container">
+                <span class="menu__subtitle">Notre spécialité</span>
+                <h2 class="menu__title">Menu</h2>
+            </div>
+            <div class="menu__description">
+                <div class="menu__tab">
+                    <ul class="menu__tabs">
+                        <li [class.active__menu]="isDisplayEntree" class="menu__button active__menu"
+                            (click)="showMenuEntree()">
+                            <a type="button" class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    room_service
+                                </i>
+                            </a>
+                        </li>
+                        <li [class.active__menu]="isDisplaySoup" class="menu__button" (click)="showMenuSoup()">
+                            <a class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    ramen_dining
+                                </i>
+                            </a>
+                        </li>
+                        <li [class.active__menu]="isDisplayNouille" class="menu__button" (click)="showMenuNouille()">
+                            <a class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    dinner_dining
+                                </i>
+                            </a>
+                        </li>
+                        <li [class.active__menu]="isDisplayRice" class="menu__button" (click)="showMenuRice()">
+                            <a class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    rice_bowl
+                                </i>
+                            </a>
+                        </li>
+                        <li [class.active__menu]="isDisplayDessert" class="menu__button" (click)="showMenuDessert()">
+                            <a class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    brunch_dining
+                                </i>
+                            </a>
+                        </li>
+                        <!-- <li class="menu__button">
+                            <a class="menu__button-item">
+                                <i class="material-icons menu__icons">
+                                    local_cafe
+                                </i>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+
+
+                <!-------------------------------- ENTREE ----------------------------->
+                <div id="entree" [class.active]="isDisplayEntree" class="menu__tab-content entree">
+                    <div class="menu__table-container">
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/Nem.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Nem (4 pieces)</h3>
+                                        <h4>4.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/Rouleaux printemps.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Rouleaux printemps</h3>
+                                        <h4>3.50€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/beigenetcrevetterizvert.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Beignet crevette 3 pieces</h3>
+                                        <h4>7.50€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/samousa.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Samousa 3 pièce</h3>
+                                        <h4>4.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-------------------------------- SOUPE ----------------------------->
+                <div [class.active]="isDisplaySoup" class="menu__tab-content soup">
+                    <div class="menu__table-container">
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/phoboeuf.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Pho Boeuf Special</h3>
+                                        <h4>10.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/phoboeuf.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Pho Boeuf</h3>
+                                        <h4>10.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/phoboeuf.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Pho Poulet</h3>
+                                        <h4>10.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/phoboeuf.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Pho boeuf au sate</h3>
+                                        <h4>10.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------------------------------- NOUILLE ----------------------------->
+                <div [class.active]="isDisplayNouille" class="menu__tab-content nouille">
+                    <div class="menu__table-container">
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/nouillecroustillantboeuf.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Nouille croustillante au boeuf</h3>
+                                        <h4>11.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/boeuflabot.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Bœuf La Lot</h3>
+                                        <h4>13.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/Soupes nouilles raviolis et crevettes.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Soup nouille raviolis et crevette</h3>
+                                        <h4>12.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/Nouilles sauté au légumes.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Nouille sauté au légume</h3>
+                                        <h4>5.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-------------------------------- Rice ----------------------------->
+                <div [class.active]="isDisplayRice" class="menu__tab-content rice">
+                    <div class="menu__table-container">
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/boeufloclac.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Bœuf loc lac</h3>
+                                        <h4>11.90€</h4>
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/porcaucaramelrizblanc.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Riz blanc au porc caramel</h3>
+                                        <h4>9.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/rizcrevette.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Riz crevette</h3>
+                                        <h4>7.50€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------- DESSERT ----------------------------->
+                <div [class.active]="isDisplayDessert" class="menu__tab-content dessert">
+                    <div class="menu__table-container">
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/chebamau.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>3 Couleurs</h3>
+                                        <h4>3.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/perles-de-coco.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Perle de coco</h3>
+                                        <h4>2.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/caphesuada.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Cafe glace au lait</h3>
+                                        <h4>5.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu__tab-item">
+                            <div class="menu__tab-items">
+                                <div class="menu__single">
+                                    <div class="menu__img">
+                                        <img src="../../assets/Image/menu/saladedefruite.jpg" alt="">
+                                    </div>
+                                    <div class="menu__detail">
+                                        <h3>Salade de fruite</h3>
+                                        <h4>4.90€</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
